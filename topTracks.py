@@ -46,7 +46,7 @@ user = 'beatriz.ribeiro'
 
 browser = webdriver.Chrome(f'C:/Users/{user}/AppData/Local/Programs/Python/Python310/Lib/site-packages/selenium/webdriver/chrome/chromedriver.exe')
 
-artist = 'Taylor Swift'
+artist = input(print('Which artist do you want do see today?'))
 browser.get(f'https://open.spotify.com/search/{artist}]')
 linkElement = browser.find_element_by_link_text(artist).get_attribute('href')
 browser.quit()
