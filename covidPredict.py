@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 import matplotlib.pyplot as plt
 
-covidDf = pd.read_csv('C:/Users/beatriz.ribeiro/Downloads/CovidSpDataSus(1).csv', sep=';')
+covidDf = pd.read_csv('CovidSpDataSus.csv', sep=';')
 
 covidX = covidDf[["Tosse", "Coriza", "Dor de Cabeça", "Febre", "Assintomático", "Distúrbios Olfativos", "Distúrbios Gustativos", "profSaudeBool"]].values
 covidY = covidDf["resultadoBool"]
